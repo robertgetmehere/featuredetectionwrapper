@@ -1,0 +1,68 @@
+body {
+    width:80%;
+    padding:0 10%;
+}
+table {
+    width:100%;
+    margin:20px 0;
+}
+thead {
+    background-color:#efefef;
+    width:100%;
+}
+.header {
+    background-color:#efefef;
+    width:100%;
+}
+tr {
+    line-height:24px;
+    font-size:12px;
+    width:100%;
+}
+td {
+    min-width: 33%;
+    width:auto !important;
+    padding:5px 10px;
+    margin:0;
+    border:0;
+    border-bottom:1px solid #999;
+    vertical-align: top;
+}
+.appProp {
+    width:200px;
+}
+.result {
+    width:16px;
+    height:16px;
+    margin:4px;
+    display: block;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background-color:#B94A48
+}
+.yes {
+    background-color:#468847;
+}
+.no {
+    background-color:#B94A48;
+}
+@media screen and (min-width: 1023px) {
+    .row1 { background-color: #468847; }
+}
+/**IPHONE ALL**/
+@media screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+    .row2 { background-color: #468847; }
+}
+/**IPHONE LANDSCAPE**/
+@media screen and (max-device-width: 480px) and (orientation:landscape) {
+    .row3 { background-color: #468847; }
+}
+/**IPAD PORTRAIT**/
+@media screen and (device-width: 768px) and (orientation:portrait) {
+    .row4 { background-color: #468847; }
+}
+/**IPAD LANDSCAPE**/
+@media screen and (device-width: 768px) and (orientation:landscape) {
+    .row5 { background-color: #468847; }
+}

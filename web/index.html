@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="none"/>
+	<meta name="description" content="Responsive Design Framework"/>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="viewport" content="width = device-width, initial-scale = 1, user-scalable = no" />
+	<title>Browser and Device Testing Framework</title>
+	<link href="assets/css/core.css" type="text/css" rel="stylesheet" media="screen"/>
+	<link href="assets/css/responsive.css" type="text/css" rel="stylesheet" media="all"/>
+	<link href="assets/css/mobile.css" type="text/css" rel="stylesheet" media="screen and (max-device-width: 480px)"/>
+</head>
+<body>
+<h2>CSS Media Queries</h2>
+<table cellspacing="0" cellpadding="0">
+	<thead>
+	<tr>
+		<td>Query</td>
+		<td>Usage</td>
+		<td>Result</td>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>@media screen and (min-width: 1024px)</td>
+		<td>laptops and desktops</td>
+		<td><div class="result row1"></div></td>
+	</tr>
+	<tr>
+		<td>@media screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2)</td>
+		<td>iphone portrait</td>
+		<td><div class="result row2"></div></td>
+	</tr>
+	<tr>
+		<td>@media screen and (max-device-width: 480px) and (orientation:landscape)</td>
+		<td>iphone landscape</td>
+		<td><div class="result row3"></div></td>
+	</tr>
+	<tr>
+		<td>@media screen and (device-width: 768px) and (orientation:portrait)</td>
+		<td>ipad portrait</td>
+		<td><div class="result row4"></div></td>
+	</tr>
+	<tr>
+		<td>@media screen and (device-width: 768px) and (orientation:landscape)</td>
+		<td>ipad landscape</td>
+		<td><div class="result row5"></div></td>
+	</tr>
+	</tbody>
+</table>
+<h2>Feature Detection</h2>
+<table cellspacing="0" cellpadding="0" class="features">
+	<tr class="header">
+		<td>Component</td>
+		<td>Feature</td>
+		<td>Available</td>
+	</tr>
+</table>
+<h2>Browser Properties</h2>
+<table cellspacing="0" cellpadding="0">
+	<thead>
+		<tr>
+			<td class="appProp">
+				Browser Property
+			</td>
+			<td>
+				Value
+			</td>
+		</tr>
+		<tbody>
+			<tr>
+				<td class="appProp">
+					Code Base
+				</td>
+				<td class="appCodeName"></td>
+			</tr>
+			<tr>
+				<td class="appProp">
+					Product Name
+				</td>
+				<td class="appName"></td>
+			</tr>
+			<tr>
+				<td class="appProp">
+					Product Version
+				</td>
+				<td class="appVersion">
+
+				</td>
+			</tr>
+			<tr>
+				<td class="appProp">
+					Platform
+				</td>
+				<td class="appPlatform">
+
+				</td>
+			</tr>
+			<tr>
+				<td class="appProp">
+					Available Screen Width
+				</td>
+				<td class="appAvailWidth">
+
+				</td>
+			</tr>
+			<tr>
+				<td class="appProp">
+					Available Screen Height
+				</td>
+				<td class="appAvailHeight">
+
+				</td>
+			</tr>
+			<tr>
+				<td class="appProp">Screen Pixel Depth</td>
+				<td class="appPixelDepth"></td>
+			</tr>
+			<tr>
+				<td class="appProp">Is Online</td>
+				<td class="appOnline"></td>
+			</tr>
+			<tr>
+				<td class="appProp">Cookies Enabled</td>
+				<td class="appCookies"></td>
+			</tr>
+			<tr>
+				<td class="appProp">Geolocation Enabled</td>
+				<td class="appGeolocation"></td>
+			</tr>
+			<tr>
+				<td class="appProp">Base Language</td>
+				<td class="appLanguage"></td>
+			</tr>
+		</tbody>
+	</thead>
+</table>
+
+</body>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/modernizer.js"></script>
+<script src="assets/js/agent.js"></script>
+<script type="text/javascript">
+	window.Agent.initialize();
+</script>
+</html>
